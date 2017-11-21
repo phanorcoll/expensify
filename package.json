@@ -4,7 +4,7 @@
     "description": "extensify reactjs app - manage expenses",
     "main": "index.js",
     "scripts": {
-        "dev": "webpack-dashboard -- webpack-dev-server --open --config webpack.dev.js",
+        "dev": "webpack-dashboard -- webpack-dev-server --config webpack.dev.js",
         "build": "NODE_ENV='production' webpack --progress --config webpack.prod.js",
         "deploy": "npm run build && firebase deploy",
         "firebase-init": "firebase login && firebase init"
