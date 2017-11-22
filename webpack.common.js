@@ -6,7 +6,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
     entry: {
         //entry: './app/index.jsx',
-        entry: './playground/redux-expensify.jsx'
+        entry: './app/index.jsx'
     },
     output: {
         path: path.resolve(__dirname, '/dist/'),
