@@ -8,7 +8,9 @@
         "build": "NODE_ENV='production' webpack --progress --config webpack.prod.js",
         "deploy": "npm run build && firebase deploy",
         "firebase-init": "firebase login && firebase init",
-        "test": "jest --config=jest.config.json"
+        "test": "jest --config=jest.config.json",
+        "start": "node server/server.jsx",
+        "heroku-postbuild":"yarn run build"
     },
     "repository": {
         "type": "git",
@@ -17,6 +19,7 @@
     "author": "Phanor Coll <phanorcoll@gmail.com> (http://www.phanorcoll.com)",
     "license": "ISC",
     "dependencies": {
+        "express": "^4.16.2",
         "prop-types": "^15.6.0",
         "query-string": "^5.0.1",
         "react": "^16.1.1",
